@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>다이어트 기록</title>
+    <!-- 부트스트랩 CDN 추가 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- 외부 CSS 파일 연결 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- SweetAlert2 라이브러리 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="mt-4 mb-4">다이어트 기록</h2>
+
+    <!-- 입력 폼 -->
+    <div class="form-group">
+        <label for="dateInput">날짜와 몸무게 기록:</label>
+        <div class="input-group">
+            <input type="date" id="dateInput" class="form-control">
+            <input type="number" id="weightInput" class="form-control" placeholder="몸무게를 입력하세요" step="0.1">
+            <div class="input-group-append">
+                <button class="btn btn-primary" onclick="addRecord()">추가</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기록 테이블 -->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>날짜</th>
+            <th>누적 몸무게</th>
+            <th>삭제</th>
+        </tr>
+        </thead>
+        <tbody id="recordTableBody">
+        <!-- 기록이 추가될 자리 -->
+        </tbody>
+    </table>
+</div>
+
+<!-- 부트스트랩 및 외부 JavaScript 파일 연결 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- SweetAlert2 라이브러리 추가 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- 외부 JavaScript 파일 연결 -->
+<script src="scripts.js"></script>
+</body>
+</html>

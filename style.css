@@ -1,0 +1,17 @@
+body {
+    padding: 20px;
+}
+
+/* 추가한 스타일 */
+.input-group-append button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.table th:nth-child(2), .table td:nth-child(2) {
+    font-weight: bold;
+}
